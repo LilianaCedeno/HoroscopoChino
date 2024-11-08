@@ -1,0 +1,348 @@
+create table horoscopo(
+animal varchar(30), 
+des_hor varchar(500), 
+fecha_ini date,
+fecha_fin date, 
+lugar varchar(200));
+
+create table usuario(
+id INT PRIMARY KEY AUTO_INCREMENT, 
+nombre_usu varchar(30), 
+nom_usu varchar(30), 
+email_usu varchar(30), 
+fec_nac date, 
+cla_usu varchar(30), 
+ani_usu varchar(30));
+
+
+select * from usuario;
+insert into usuario values(null,'pablo','pablo','p@hhh.com','2003-02-10 00:00:00','1234','cabra');
+insert into usuario values(null,'maria','mari','p@hhh.com','2004-02-10 00:00:00','1234','mono');
+insert into usuario values(null,'juan','juan','p@hhh.com','2005-02-10 00:00:00','1234','Gallo');
+
+
+INSERT INTO horoscopo (animal, des_hor, fecha_ini, fecha_fin, lugar) VALUES 
+('Rata', 'Astuta, adaptable y ambiciosa, la Rata es ingeniosa y persuasiva.', '1924-02-05 00:00:00', '1925-01-23 00:00:00', 'recursos/imagenes/rata.jpg');
+
+INSERT INTO horoscopo (animal, des_hor, fecha_ini, fecha_fin, lugar) VALUES 
+('Buey', 'Fuerte, confiable y trabajador, el Buey es paciente y determinado.', '1925-01-24 00:00:00', '1926-02-11 00:00:00', 'recursos/imagenes/buey.jpg');
+
+INSERT INTO horoscopo (animal, des_hor, fecha_ini, fecha_fin, lugar) VALUES 
+('Tigre', 'Valiente, apasionado e impulsivo, el Tigre es independiente y seguro de sí mismo.', '1926-02-12 00:00:00', '1927-01-30 00:00:00', 'recursos/imagenes/tigre.jpg');
+
+INSERT INTO horoscopo (animal, des_hor, fecha_ini, fecha_fin, lugar) VALUES 
+('Conejo', 'Tranquilo, amable y elegante, el Conejo evita conflictos y prefiere la paz.', '1927-01-31 00:00:00', '1928-02-17 00:00:00', 'recursos/imagenes/conejo.jpg');
+
+INSERT INTO horoscopo (animal, des_hor, fecha_ini, fecha_fin, lugar) VALUES 
+('Dragón', 'Fuerte, carismático y seguro, el Dragón es un líder nato con energía y pasión.', '1928-02-18 00:00:00', '1929-02-05 00:00:00', 'recursos/imagenes/dragon.jpg');
+
+INSERT INTO horoscopo (animal, des_hor, fecha_ini, fecha_fin, lugar) VALUES 
+('Serpiente', 'Sabia, intuitiva y reservada, la Serpiente es analítica y reflexiva.', '1929-02-06 00:00:00', '1930-01-25 00:00:00', 'recursos/imagenes/serpiente.jpg');
+
+INSERT INTO horoscopo (animal, des_hor, fecha_ini, fecha_fin, lugar) VALUES 
+('Caballo', 'Energético, libre y entusiasta, el Caballo es sociable y le gusta la aventura.', '1930-01-26 00:00:00', '1931-02-14 00:00:00', 'recursos/imagenes/caballo.jpg');
+
+INSERT INTO horoscopo (animal, des_hor, fecha_ini, fecha_fin, lugar) VALUES 
+('Cabra', 'Creativa, amable y empática, la Cabra es sensible y prefiere la armonía.', '1931-02-15 00:00:00', '1932-02-02 00:00:00', 'recursos/imagenes/cabra.jpg');
+
+INSERT INTO horoscopo (animal, des_hor, fecha_ini, fecha_fin, lugar) VALUES 
+('Mono', 'Inteligente, divertido y sociable, el Mono es curioso y hábil para resolver problemas.', '1932-02-03 00:00:00', '1933-01-22 00:00:00', 'recursos/imagenes/mono.jpg');
+
+INSERT INTO horoscopo (animal, des_hor, fecha_ini, fecha_fin, lugar) VALUES 
+('Gallo', 'Meticuloso, organizado y honesto, el Gallo es trabajador y disfruta de ser el centro de atención.', '1933-01-23 00:00:00', '1934-02-09 00:00:00', 'recursos/imagenes/gallo.jpg');
+
+INSERT INTO horoscopo (animal, des_hor, fecha_ini, fecha_fin, lugar) VALUES 
+('Perro', 'Leal, sincero y justo, el Perro es protector y de confianza.', '1934-02-10 00:00:00', '1935-01-28 00:00:00', 'recursos/imagenes/perro.jpg');
+
+INSERT INTO horoscopo (animal, des_hor, fecha_ini, fecha_fin, lugar) VALUES 
+('Cerdo', 'Generoso, amable y honesto, el Cerdo disfruta de la vida y es tolerante con los demás.', '1935-01-29 00:00:00', '1936-02-16 00:00:00', 'recursos/imagenes/cerdo.jpg');
+
+INSERT INTO horoscopo (animal, des_hor, fecha_ini, fecha_fin, lugar) VALUES 
+('Rata', 'Astuta, adaptable y ambiciosa, la Rata es ingeniosa y persuasiva.', '1936-02-17 00:00:00', '1937-02-05 00:00:00', 'recursos/imagenes/rata.jpg');
+
+INSERT INTO horoscopo (animal, des_hor, fecha_ini, fecha_fin, lugar) VALUES 
+('Buey', 'Fuerte, confiable y trabajador, el Buey es paciente y determinado.', '1937-02-06 00:00:00', '1938-01-24 00:00:00', 'recursos/imagenes/buey.jpg');
+
+INSERT INTO horoscopo (animal, des_hor, fecha_ini, fecha_fin, lugar) VALUES 
+('Tigre', 'Valiente, apasionado e impulsivo, el Tigre es independiente y seguro de sí mismo.', '1938-01-25 00:00:00', '1939-02-12 00:00:00', 'recursos/imagenes/tigre.jpg');
+
+INSERT INTO horoscopo (animal, des_hor, fecha_ini, fecha_fin, lugar) VALUES 
+('Conejo', 'Tranquilo, amable y elegante, el Conejo evita conflictos y prefiere la paz.', '1939-02-13 00:00:00', '1940-02-01 00:00:00', 'recursos/imagenes/conejo.jpg');
+
+INSERT INTO horoscopo (animal, des_hor, fecha_ini, fecha_fin, lugar) VALUES 
+('Dragón', 'Fuerte, carismático y seguro, el Dragón es un líder nato con energía y pasión.', '1940-02-02 00:00:00', '1941-01-22 00:00:00', 'recursos/imagenes/dragon.jpg');
+
+INSERT INTO horoscopo (animal, des_hor, fecha_ini, fecha_fin, lugar) VALUES 
+('Serpiente', 'Sabia, intuitiva y reservada, la Serpiente es analítica y reflexiva.', '1941-01-23 00:00:00', '1942-02-10 00:00:00', 'recursos/imagenes/serpiente.jpg');
+
+INSERT INTO horoscopo (animal, des_hor, fecha_ini, fecha_fin, lugar) VALUES 
+('Caballo', 'Energético, libre y entusiasta, el Caballo es sociable y le gusta la aventura.', '1942-02-11 00:00:00', '1943-01-30 00:00:00', 'recursos/imagenes/caballo.jpg');
+
+INSERT INTO horoscopo (animal, des_hor, fecha_ini, fecha_fin, lugar) VALUES 
+('Cabra', 'Creativa, amable y empática, la Cabra es sensible y prefiere la armonía.', '1943-01-31 00:00:00', '1944-02-18 00:00:00', 'recursos/imagenes/cabra.jpg');
+
+INSERT INTO horoscopo (animal, des_hor, fecha_ini, fecha_fin, lugar) VALUES 
+('Mono', 'Inteligente, divertido y sociable, el Mono es curioso y hábil para resolver problemas.', '1944-02-19 00:00:00', '1945-02-07 00:00:00', 'recursos/imagenes/mono.jpg');
+
+INSERT INTO horoscopo (animal, des_hor, fecha_ini, fecha_fin, lugar) VALUES 
+('Gallo', 'Meticuloso, organizado y honesto, el Gallo es trabajador y disfruta de ser el centro de atención.', '1945-02-08 00:00:00', '1946-01-27 00:00:00', 'recursos/imagenes/gallo.jpg');
+
+INSERT INTO horoscopo (animal, des_hor, fecha_ini, fecha_fin, lugar) VALUES 
+('Perro', 'Leal, sincero y justo, el Perro es protector y de confianza.', '1946-01-28 00:00:00', '1947-02-15 00:00:00', 'recursos/imagenes/perro.jpg');
+
+INSERT INTO horoscopo (animal, des_hor, fecha_ini, fecha_fin, lugar) VALUES 
+('Cerdo', 'Generoso, amable y honesto, el Cerdo disfruta de la vida y es tolerante con los demás.', '1947-02-16 00:00:00', '1948-02-03 00:00:00', 'recursos/imagenes/cerdo.jpg');
+
+INSERT INTO horoscopo (animal, des_hor, fecha_ini, fecha_fin, lugar) VALUES 
+('Rata', 'Astuta, adaptable y ambiciosa, la Rata es ingeniosa y persuasiva.', '1948-02-04 00:00:00', '1949-01-23 00:00:00', 'recursos/imagenes/rata.jpg');
+
+INSERT INTO horoscopo (animal, des_hor, fecha_ini, fecha_fin, lugar) VALUES 
+('Buey', 'Fuerte, confiable y trabajador, el Buey es paciente y determinado.', '1949-01-24 00:00:00', '1950-02-11 00:00:00', 'recursos/imagenes/buey.jpg');
+
+INSERT INTO horoscopo (animal, des_hor, fecha_ini, fecha_fin, lugar) VALUES 
+('Tigre', 'Valiente, apasionado e impulsivo, el Tigre es independiente y seguro de sí mismo.', '1950-02-12 00:00:00', '1951-01-31 00:00:00', 'recursos/imagenes/tigre.jpg');
+
+INSERT INTO horoscopo (animal, des_hor, fecha_ini, fecha_fin, lugar) VALUES 
+('Conejo', 'Tranquilo, amable y elegante, el Conejo evita conflictos y prefiere la paz.', '1951-02-01 00:00:00', '1952-01-21 00:00:00', 'recursos/imagenes/conejo.jpg');
+
+INSERT INTO horoscopo (animal, des_hor, fecha_ini, fecha_fin, lugar) VALUES 
+('Dragón', 'Fuerte, carismático y seguro, el Dragón es un líder nato con energía y pasión.', '1952-01-22 00:00:00', '1953-02-09 00:00:00', 'recursos/imagenes/dragon.jpg');
+
+INSERT INTO horoscopo (animal, des_hor, fecha_ini, fecha_fin, lugar) VALUES 
+('Serpiente', 'Sabia, intuitiva y reservada, la Serpiente es analítica y reflexiva.', '1953-02-10 00:00:00', '1954-01-28 00:00:00', 'recursos/imagenes/serpiente.jpg');
+
+INSERT INTO horoscopo (animal, des_hor, fecha_ini, fecha_fin, lugar) VALUES 
+('Caballo', 'Energético, libre y entusiasta, el Caballo es sociable y le gusta la aventura.', '1954-01-29 00:00:00', '1955-02-15 00:00:00', 'recursos/imagenes/caballo.jpg');
+
+INSERT INTO horoscopo (animal, des_hor, fecha_ini, fecha_fin, lugar) VALUES 
+('Cabra', 'Creativa, amable y empática, la Cabra es sensible y prefiere la armonía.', '1955-02-16 00:00:00', '1956-02-05 00:00:00', 'recursos/imagenes/cabra.jpg');
+
+INSERT INTO horoscopo (animal, des_hor, fecha_ini, fecha_fin, lugar) VALUES 
+('Mono', 'Inteligente, divertido y sociable, el Mono es curioso y hábil para resolver problemas.', '1956-02-06 00:00:00', '1957-01-26 00:00:00', 'recursos/imagenes/mono.jpg');
+
+INSERT INTO horoscopo (animal, des_hor, fecha_ini, fecha_fin, lugar) VALUES 
+('Gallo', 'Meticuloso, organizado y honesto, el Gallo es trabajador y disfruta de ser el centro de atención.', '1957-01-27 00:00:00', '1958-02-13 00:00:00', 'recursos/imagenes/gallo.jpg');
+
+INSERT INTO horoscopo (animal, des_hor, fecha_ini, fecha_fin, lugar) VALUES 
+('Perro', 'Leal, sincero y justo, el Perro es protector y de confianza.', '1958-02-14 00:00:00', '1959-02-02 00:00:00', 'recursos/imagenes/perro.jpg');
+
+INSERT INTO horoscopo (animal, des_hor, fecha_ini, fecha_fin, lugar) VALUES 
+('Cerdo', 'Generoso, amable y honesto, el Cerdo disfruta de la vida y es tolerante con los demás.', '1959-02-03 00:00:00', '1960-01-23 00:00:00', 'recursos/imagenes/cerdo.jpg');
+
+INSERT INTO horoscopo (animal, des_hor, fecha_ini, fecha_fin, lugar) VALUES 
+('Rata', 'Astuta, adaptable y ambiciosa, la Rata es ingeniosa y persuasiva.', '1960-01-24 00:00:00', '1961-02-11 00:00:00', 'recursos/imagenes/rata.jpg');
+
+INSERT INTO horoscopo (animal, des_hor, fecha_ini, fecha_fin, lugar) VALUES 
+('Buey', 'Fuerte, confiable y trabajador, el Buey es paciente y determinado.', '1961-02-12 00:00:00', '1962-01-31 00:00:00', 'recursos/imagenes/buey.jpg');
+
+INSERT INTO horoscopo (animal, des_hor, fecha_ini, fecha_fin, lugar) VALUES 
+('Tigre', 'Valiente, apasionado e impulsivo, el Tigre es independiente y seguro de sí mismo.', '1962-02-01 00:00:00', '1963-01-21 00:00:00', 'recursos/imagenes/tigre.jpg');
+
+INSERT INTO horoscopo (animal, des_hor, fecha_ini, fecha_fin, lugar) VALUES 
+('Conejo', 'Tranquilo, amable y elegante, el Conejo evita conflictos y prefiere la paz.', '1963-01-22 00:00:00', '1964-02-09 00:00:00', 'recursos/imagenes/conejo.jpg');
+
+INSERT INTO horoscopo (animal, des_hor, fecha_ini, fecha_fin, lugar) VALUES 
+('Dragón', 'Fuerte, carismático y seguro, el Dragón es un líder nato con energía y pasión.', '1964-02-10 00:00:00', '1965-01-28 00:00:00', 'recursos/imagenes/dragon.jpg');
+
+INSERT INTO horoscopo (animal, des_hor, fecha_ini, fecha_fin, lugar) VALUES 
+('Serpiente', 'Sabia, intuitiva y reservada, la Serpiente es analítica y reflexiva.', '1965-01-29 00:00:00', '1966-02-15 00:00:00', 'recursos/imagenes/serpiente.jpg');
+
+INSERT INTO horoscopo (animal, des_hor, fecha_ini, fecha_fin, lugar) VALUES 
+('Caballo', 'Energético, libre y entusiasta, el Caballo es sociable y le gusta la aventura.', '1966-02-16 00:00:00', '1967-02-05 00:00:00', 'recursos/imagenes/caballo.jpg');
+
+INSERT INTO horoscopo (animal, des_hor, fecha_ini, fecha_fin, lugar) VALUES 
+('Cabra', 'Creativa, amable y empática, la Cabra es sensible y prefiere la armonía.', '1967-02-06 00:00:00', '1968-01-24 00:00:00', 'recursos/imagenes/cabra.jpg');
+
+INSERT INTO horoscopo (animal, des_hor, fecha_ini, fecha_fin, lugar) VALUES 
+('Mono', 'Inteligente, divertido y sociable, el Mono es curioso y hábil para resolver problemas.', '1968-01-25 00:00:00', '1969-02-12 00:00:00', 'recursos/imagenes/mono.jpg');
+
+INSERT INTO horoscopo (animal, des_hor, fecha_ini, fecha_fin, lugar) VALUES 
+('Gallo', 'Meticuloso, organizado y honesto, el Gallo es trabajador y disfruta de ser el centro de atención.', '1969-02-13 00:00:00', '1970-02-01 00:00:00', 'recursos/imagenes/gallo.jpg');
+
+
+
+INSERT INTO horoscopo (animal, des_hor, fecha_ini, fecha_fin, lugar) VALUES 
+('Perro', 'Leal, sincero y justo, el Perro es protector y de confianza.', '1970-02-06 00:00:00', '1971-01-26 00:00:00', 'recursos/imagenes/perro.jpg');
+
+INSERT INTO horoscopo (animal, des_hor, fecha_ini, fecha_fin, lugar) VALUES 
+('Cerdo', 'Generoso, amable y honesto, el Cerdo disfruta de la vida y es tolerante con los demás.', '1971-01-27 00:00:00', '1972-02-14 00:00:00', 'recursos/imagenes/cerdo.jpg');
+
+INSERT INTO horoscopo (animal, des_hor, fecha_ini, fecha_fin, lugar) VALUES 
+('Rata', 'Astuta, adaptable y ambiciosa, la Rata es ingeniosa y persuasiva.', '1972-02-15 00:00:00', '1973-02-02 00:00:00', 'recursos/imagenes/rata.jpg');
+
+INSERT INTO horoscopo (animal, des_hor, fecha_ini, fecha_fin, lugar) VALUES 
+('Buey', 'Fuerte, confiable y trabajador, el Buey es paciente y determinado.', '1973-02-03 00:00:00', '1974-01-21 00:00:00', 'recursos/imagenes/buey.jpg');
+
+INSERT INTO horoscopo (animal, des_hor, fecha_ini, fecha_fin, lugar) VALUES 
+('Tigre', 'Valiente, apasionado e impulsivo, el Tigre es independiente y seguro de sí mismo.', '1974-01-22 00:00:00', '1975-02-09 00:00:00', 'recursos/imagenes/tigre.jpg');
+
+INSERT INTO horoscopo (animal, des_hor, fecha_ini, fecha_fin, lugar) VALUES 
+('Conejo', 'Tranquilo, amable y elegante, el Conejo evita conflictos y prefiere la paz.', '1975-02-10 00:00:00', '1976-01-28 00:00:00', 'recursos/imagenes/conejo.jpg');
+
+INSERT INTO horoscopo (animal, des_hor, fecha_ini, fecha_fin, lugar) VALUES 
+('Dragón', 'Fuerte, carismático y seguro, el Dragón es un líder nato con energía y pasión.', '1976-01-29 00:00:00', '1977-02-16 00:00:00', 'recursos/imagenes/dragon.jpg');
+
+INSERT INTO horoscopo (animal, des_hor, fecha_ini, fecha_fin, lugar) VALUES 
+('Serpiente', 'Sabia, intuitiva y reservada, la Serpiente es analítica y reflexiva.', '1977-02-17 00:00:00', '1978-02-05 00:00:00', 'recursos/imagenes/serpiente.jpg');
+
+INSERT INTO horoscopo (animal, des_hor, fecha_ini, fecha_fin, lugar) VALUES 
+('Caballo', 'Energético, libre y entusiasta, el Caballo es sociable y le gusta la aventura.', '1978-02-06 00:00:00', '1979-01-25 00:00:00', 'recursos/imagenes/caballo.jpg');
+
+INSERT INTO horoscopo (animal, des_hor, fecha_ini, fecha_fin, lugar) VALUES 
+('Cabra', 'Creativa, amable y empática, la Cabra es sensible y prefiere la armonía.', '1979-01-26 00:00:00', '1980-02-13 00:00:00', 'recursos/imagenes/cabra.jpg');
+
+INSERT INTO horoscopo (animal, des_hor, fecha_ini, fecha_fin, lugar) VALUES 
+('Mono', 'Inteligente, divertido y sociable, el Mono es curioso y hábil para resolver problemas.', '1980-02-14 00:00:00', '1981-02-01 00:00:00', 'recursos/imagenes/mono.jpg');
+
+INSERT INTO horoscopo (animal, des_hor, fecha_ini, fecha_fin, lugar) VALUES 
+('Gallo', 'Meticuloso, organizado y honesto, el Gallo es trabajador y disfruta de ser el centro de atención.', '1981-02-02 00:00:00', '1982-01-21 00:00:00', 'recursos/imagenes/gallo.jpg');
+
+INSERT INTO horoscopo (animal, des_hor, fecha_ini, fecha_fin, lugar) VALUES 
+('Perro', 'Leal, sincero y justo, el Perro es protector y de confianza.', '1982-01-22 00:00:00', '1983-02-09 00:00:00', 'recursos/imagenes/perro.jpg');
+
+INSERT INTO horoscopo (animal, des_hor, fecha_ini, fecha_fin, lugar) VALUES 
+('Cerdo', 'Generoso, amable y honesto, el Cerdo disfruta de la vida y es tolerante con los demás.', '1983-02-10 00:00:00', '1984-01-28 00:00:00', 'recursos/imagenes/cerdo.jpg');
+
+INSERT INTO horoscopo (animal, des_hor, fecha_ini, fecha_fin, lugar) VALUES 
+('Rata', 'Astuta, adaptable y ambiciosa, la Rata es ingeniosa y persuasiva.', '1984-01-29 00:00:00', '1985-02-16 00:00:00', 'recursos/imagenes/rata.jpg');
+
+INSERT INTO horoscopo (animal, des_hor, fecha_ini, fecha_fin, lugar) VALUES 
+('Buey', 'Fuerte, confiable y trabajador, el Buey es paciente y determinado.', '1985-02-17 00:00:00', '1986-02-05 00:00:00', 'recursos/imagenes/buey.jpg');
+
+INSERT INTO horoscopo (animal, des_hor, fecha_ini, fecha_fin, lugar) VALUES 
+('Tigre', 'Valiente, apasionado e impulsivo, el Tigre es independiente y seguro de sí mismo.', '1986-02-06 00:00:00', '1987-01-25 00:00:00', 'recursos/imagenes/tigre.jpg');
+
+INSERT INTO horoscopo (animal, des_hor, fecha_ini, fecha_fin, lugar) VALUES 
+('Conejo', 'Tranquilo, amable y elegante, el Conejo evita conflictos y prefiere la paz.', '1987-01-26 00:00:00', '1988-02-13 00:00:00', 'recursos/imagenes/conejo.jpg');
+
+INSERT INTO horoscopo (animal, des_hor, fecha_ini, fecha_fin, lugar) VALUES 
+('Dragón', 'Fuerte, carismático y seguro, el Dragón es un líder nato con energía y pasión.', '1988-02-14 00:00:00', '1989-02-02 00:00:00', 'recursos/imagenes/dragon.jpg');
+
+INSERT INTO horoscopo (animal, des_hor, fecha_ini, fecha_fin, lugar) VALUES 
+('Serpiente', 'Sabia, intuitiva y reservada, la Serpiente es analítica y reflexiva.', '1989-02-03 00:00:00', '1990-01-23 00:00:00', 'recursos/imagenes/serpiente.jpg');
+
+INSERT INTO horoscopo (animal, des_hor, fecha_ini, fecha_fin, lugar) VALUES 
+('Caballo', 'Energético, libre y entusiasta, el Caballo es sociable y le gusta la aventura.', '1990-01-24 00:00:00', '1991-02-11 00:00:00', 'recursos/imagenes/caballo.jpg');
+
+INSERT INTO horoscopo (animal, des_hor, fecha_ini, fecha_fin, lugar) VALUES 
+('Cabra', 'Creativa, amable y empática, la Cabra es sensible y prefiere la armonía.', '1991-02-12 00:00:00', '1992-01-31 00:00:00', 'recursos/imagenes/cabra.jpg');
+
+INSERT INTO horoscopo (animal, des_hor, fecha_ini, fecha_fin, lugar) VALUES 
+('Mono', 'Inteligente, divertido y sociable, el Mono es curioso y hábil para resolver problemas.', '1992-02-01 00:00:00', '1993-01-21 00:00:00', 'recursos/imagenes/mono.jpg');
+
+INSERT INTO horoscopo (animal, des_hor, fecha_ini, fecha_fin, lugar) VALUES 
+('Gallo', 'Meticuloso, organizado y honesto, el Gallo es trabajador y disfruta de ser el centro de atención.', '1993-01-22 00:00:00', '1994-02-09 00:00:00', 'recursos/imagenes/gallo.jpg');
+
+INSERT INTO horoscopo (animal, des_hor, fecha_ini, fecha_fin, lugar) VALUES 
+('Perro', 'Leal, sincero y justo, el Perro es protector y de confianza.', '1994-02-10 00:00:00', '1995-01-30 00:00:00', 'recursos/imagenes/perro.jpg');
+
+INSERT INTO horoscopo (animal, des_hor, fecha_ini, fecha_fin, lugar) VALUES 
+('Cerdo', 'Generoso, amable y honesto, el Cerdo disfruta de la vida y es tolerante con los demás.', '1995-01-31 00:00:00', '1996-02-18 00:00:00', 'recursos/imagenes/cerdo.jpg');
+
+INSERT INTO horoscopo (animal, des_hor, fecha_ini, fecha_fin, lugar) VALUES 
+('Rata', 'Astuta, adaptable y ambiciosa, la Rata es ingeniosa y persuasiva.', '1996-02-19 00:00:00', '1997-02-06 00:00:00', 'recursos/imagenes/rata.jpg');
+
+INSERT INTO horoscopo (animal, des_hor, fecha_ini, fecha_fin, lugar) VALUES 
+('Buey', 'Fuerte, confiable y trabajador, el Buey es paciente y determinado.', '1997-02-07 00:00:00', '1998-01-27 00:00:00', 'recursos/imagenes/buey.jpg');
+
+INSERT INTO horoscopo (animal, des_hor, fecha_ini, fecha_fin, lugar) VALUES 
+('Tigre', 'Valiente, apasionado e impulsivo, el Tigre es independiente y seguro de sí mismo.', '1998-01-28 00:00:00', '1999-02-15 00:00:00', 'recursos/imagenes/tigre.jpg');
+
+INSERT INTO horoscopo (animal, des_hor, fecha_ini, fecha_fin, lugar) VALUES 
+('Conejo', 'Tranquilo, amable y elegante, el Conejo evita conflictos y prefiere la paz.', '1999-02-16 00:00:00', '2000-02-04 00:00:00', 'recursos/imagenes/conejo.jpg');
+
+INSERT INTO horoscopo (animal, des_hor, fecha_ini, fecha_fin, lugar) VALUES 
+('Dragón', 'Fuerte, carismático y seguro, el Dragón es un líder nato con energía y pasión.', '2000-02-05 00:00:00', '2001-01-23 00:00:00', 'recursos/imagenes/dragon.jpg');
+
+INSERT INTO horoscopo (animal, des_hor, fecha_ini, fecha_fin, lugar) VALUES 
+('Serpiente', 'Sabia, intuitiva y reservada, la Serpiente es analítica y reflexiva.', '2001-01-24 00:00:00', '2002-02-11 00:00:00', 'recursos/imagenes/serpiente.jpg');
+
+INSERT INTO horoscopo (animal, des_hor, fecha_ini, fecha_fin, lugar) VALUES 
+('Caballo', 'Energético, libre y entusiasta, el Caballo es sociable y le gusta la aventura.', '2002-02-12 00:00:00', '2003-01-31 00:00:00', 'recursos/imagenes/caballo.jpg');
+
+INSERT INTO horoscopo (animal, des_hor, fecha_ini, fecha_fin, lugar) VALUES 
+('Cabra', 'Creativa, amable y empática, la Cabra es sensible y prefiere la armonía.', '2003-02-01 00:00:00', '2004-01-21 00:00:00', 'recursos/imagenes/cabra.jpg');
+
+INSERT INTO horoscopo (animal, des_hor, fecha_ini, fecha_fin, lugar) VALUES 
+('Mono', 'Inteligente, divertido y sociable, el Mono es curioso y hábil para resolver problemas.', '2004-01-22 00:00:00', '2005-02-09 00:00:00', 'recursos/imagenes/mono.jpg');
+
+INSERT INTO horoscopo (animal, des_hor, fecha_ini, fecha_fin, lugar) VALUES 
+('Gallo', 'Meticuloso, organizado y honesto, el Gallo es trabajador y disfruta de ser el centro de atención.', '2005-02-10 00:00:00', '2006-01-28 00:00:00', 'recursos/imagenes/gallo.jpg');
+
+INSERT INTO horoscopo (animal, des_hor, fecha_ini, fecha_fin, lugar) VALUES 
+('Perro', 'Leal, sincero y justo, el Perro es protector y de confianza.', '2006-01-29 00:00:00', '2007-02-17 00:00:00', 'recursos/imagenes/perro.jpg');
+
+INSERT INTO horoscopo (animal, des_hor, fecha_ini, fecha_fin, lugar) VALUES 
+('Cerdo', 'Generoso, amable y honesto, el Cerdo disfruta de la vida y es tolerante con los demás.', '2007-02-18 00:00:00', '2008-02-06 00:00:00', 'recursos/imagenes/cerdo.jpg');
+
+INSERT INTO horoscopo (animal, des_hor, fecha_ini, fecha_fin, lugar) VALUES 
+('Rata', 'Astuta, adaptable y ambiciosa, la Rata es ingeniosa y persuasiva.', '2008-02-07 00:00:00', '2009-01-25 00:00:00', 'recursos/imagenes/rata.jpg');
+
+INSERT INTO horoscopo (animal, des_hor, fecha_ini, fecha_fin, lugar) VALUES 
+('Buey', 'Fuerte, confiable y trabajador, el Buey es paciente y determinado.', '2009-01-26 00:00:00', '2010-02-14 00:00:00', 'recursos/imagenes/buey.jpg');
+
+INSERT INTO horoscopo (animal, des_hor, fecha_ini, fecha_fin, lugar) VALUES 
+('Tigre', 'Valiente, apasionado e impulsivo, el Tigre es independiente y seguro de sí mismo.', '2010-02-15 00:00:00', '2011-02-02 00:00:00', 'recursos/imagenes/tigre.jpg');
+
+INSERT INTO horoscopo (animal, des_hor, fecha_ini, fecha_fin, lugar) VALUES 
+('Conejo', 'Tranquilo, amable y elegante, el Conejo evita conflictos y prefiere la paz.', '2011-02-03 00:00:00', '2012-01-22 00:00:00', 'recursos/imagenes/conejo.jpg');
+
+INSERT INTO horoscopo (animal, des_hor, fecha_ini, fecha_fin, lugar) VALUES 
+('Dragón', 'Fuerte, carismático y seguro, el Dragón es un líder nato con energía y pasión.', '2012-01-23 00:00:00', '2013-02-09 00:00:00', 'recursos/imagenes/dragon.jpg');
+
+INSERT INTO horoscopo (animal, des_hor, fecha_ini, fecha_fin, lugar) VALUES 
+('Serpiente', 'Sabia, intuitiva y reservada, la Serpiente es analítica y reflexiva.', '2013-02-10 00:00:00', '2014-01-30 00:00:00', 'recursos/imagenes/serpiente.jpg');
+
+INSERT INTO horoscopo (animal, des_hor, fecha_ini, fecha_fin, lugar) VALUES 
+('Caballo', 'Energético, libre y entusiasta, el Caballo es sociable y le gusta la aventura.', '2014-01-31 00:00:00', '2015-02-18 00:00:00', 'recursos/imagenes/caballo.jpg');
+
+INSERT INTO horoscopo (animal, des_hor, fecha_ini, fecha_fin, lugar) VALUES 
+('Cabra', 'Creativa, amable y empática, la Cabra es sensible y prefiere la armonía.', '2015-02-19 00:00:00', '2016-02-07 00:00:00', 'recursos/imagenes/cabra.jpg');
+
+INSERT INTO horoscopo (animal, des_hor, fecha_ini, fecha_fin, lugar) VALUES 
+('Mono', 'Inteligente, divertido y sociable, el Mono es curioso y hábil para resolver problemas.', '2016-02-08 00:00:00', '2017-01-27 00:00:00', 'recursos/imagenes/mono.jpg');
+
+INSERT INTO horoscopo (animal, des_hor, fecha_ini, fecha_fin, lugar) VALUES 
+('Gallo', 'Meticuloso, organizado y honesto, el Gallo es trabajador y disfruta de ser el centro de atención.', '2017-01-28 00:00:00', '2018-02-15 00:00:00', 'recursos/imagenes/gallo.jpg');
+
+INSERT INTO horoscopo (animal, des_hor, fecha_ini, fecha_fin, lugar) VALUES 
+('Perro', 'Leal, sincero y justo, el Perro es protector y de confianza.', '2018-02-16 00:00:00', '2019-02-04 00:00:00', 'recursos/imagenes/perro.jpg');
+
+INSERT INTO horoscopo (animal, des_hor, fecha_ini, fecha_fin, lugar) VALUES 
+('Cerdo', 'Generoso, amable y honesto, el Cerdo disfruta de la vida y es tolerante con los demás.', '2019-02-05 00:00:00', '2020-01-24 00:00:00', 'recursos/imagenes/cerdo.jpg');
+
+INSERT INTO horoscopo (animal, des_hor, fecha_ini, fecha_fin, lugar) VALUES 
+('Rata', 'Astuta, adaptable y ambiciosa, la Rata es ingeniosa y persuasiva.', '2020-01-25 00:00:00', '2021-02-11 00:00:00', 'recursos/imagenes/rata.jpg');
+
+INSERT INTO horoscopo (animal, des_hor, fecha_ini, fecha_fin, lugar) VALUES 
+('Buey', 'Fuerte, confiable y trabajador, el Buey es paciente y determinado.', '2021-02-12 00:00:00', '2022-01-31 00:00:00', 'recursos/imagenes/buey.jpg');
+
+INSERT INTO horoscopo (animal, des_hor, fecha_ini, fecha_fin, lugar) VALUES 
+('Tigre', 'Valiente, apasionado e impulsivo, el Tigre es independiente y seguro de sí mismo.', '2022-02-01 00:00:00', '2023-01-21 00:00:00', 'recursos/imagenes/tigre.jpg');
+
+INSERT INTO horoscopo (animal, des_hor, fecha_ini, fecha_fin, lugar) VALUES 
+('Conejo', 'Tranquilo, amable y elegante, el Conejo evita conflictos y prefiere la paz.', '2023-01-22 00:00:00', '2024-02-09 00:00:00', 'recursos/imagenes/conejo.jpg');
+
+INSERT INTO horoscopo (animal, des_hor, fecha_ini, fecha_fin, lugar) VALUES 
+('Dragón', 'Fuerte, carismático y seguro, el Dragón es un líder nato con energía y pasión.', '2024-02-10 00:00:00', '2025-01-28 00:00:00', 'recursos/imagenes/dragon.jpg');
+
+INSERT INTO horoscopo (animal, des_hor, fecha_ini, fecha_fin, lugar) VALUES 
+('Serpiente', 'Sabia, intuitiva y reservada, la Serpiente es analítica y reflexiva.', '2025-01-29 00:00:00', '2026-02-16 00:00:00', 'recursos/imagenes/serpiente.jpg');
+
+INSERT INTO horoscopo (animal, des_hor, fecha_ini, fecha_fin, lugar) VALUES 
+('Caballo', 'Energético, libre y entusiasta, el Caballo es sociable y le gusta la aventura.', '2026-02-17 00:00:00', '2027-02-05 00:00:00', 'recursos/imagenes/caballo.jpg');
+
+INSERT INTO horoscopo (animal, des_hor, fecha_ini, fecha_fin, lugar) VALUES 
+('Cabra', 'Creativa, amable y empática, la Cabra es sensible y prefiere la armonía.', '2027-02-06 00:00:00', '2028-01-24 00:00:00', 'recursos/imagenes/cabra.jpg');
+
+INSERT INTO horoscopo (animal, des_hor, fecha_ini, fecha_fin, lugar) VALUES 
+('Mono', 'Inteligente, divertido y sociable, el Mono es curioso y hábil para resolver problemas.', '2028-01-25 00:00:00', '2029-02-12 00:00:00', 'recursos/imagenes/mono.jpg');
+
+INSERT INTO horoscopo (animal, des_hor, fecha_ini, fecha_fin, lugar) VALUES 
+('Gallo', 'Meticuloso, organizado y honesto, el Gallo es trabajador y disfruta de ser el centro de atención.', '2029-02-13 00:00:00', '2030-02-01 00:00:00', 'recursos/imagenes/gallo.jpg');
+
+INSERT INTO horoscopo (animal, des_hor, fecha_ini, fecha_fin, lugar) VALUES 
+('Perro', 'Leal, sincero y justo, el Perro es protector y de confianza.', '2030-02-02 00:00:00', '2031-01-22 00:00:00', 'recursos/imagenes/perro.jpg');
+
+INSERT INTO horoscopo (animal, des_hor, fecha_ini, fecha_fin, lugar) VALUES 
+('Cerdo', 'Generoso, amable y honesto, el Cerdo disfruta de la vida y es tolerante con los demás.', '2031-01-23 00:00:00', '2032-02-10 00:00:00', 'recursos/imagenes/cerdo.jpg');
