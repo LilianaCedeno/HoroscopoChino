@@ -32,6 +32,7 @@ Permite mostrar el signo correspondiente, junto con una imagen y descripción pe
    
 5. Despliega el archivo .war generado en tu servidor o ejecuta directamente desde el IDE.
 
+---
 💡 Uso
 
 Accede a la página principal.
@@ -41,6 +42,7 @@ Accede a la página principal.
   Una imagen representativa
   Una breve descripción de tu personalidad según el signo
 
+---
 🤝 Contribuir
 ¿Quieres contribuir? ¡Perfecto!
 
@@ -50,6 +52,7 @@ Accede a la página principal.
   Sube tu rama: git push origin nueva-funcionalidad
   Abre un Pull Request
 
+---
 👩‍💻 Autora
-Proyecto desarrollado por **Liliana Cedeño** como parte de su formación en desarrollo web Full Stack con Java.
+ **Liliana Cedeño** como parte de su formación en desarrollo web Full Stack con Java.
 
